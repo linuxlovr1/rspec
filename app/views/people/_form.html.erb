@@ -1,0 +1,35 @@
+<%= form_for @person do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: 'Name' %>
+  <br />
+
+  <%= f.label :age %>
+  <%= f.text_field :age, placeholder: 'Age' %>
+  <br />
+
+  <%= f.label :race %>
+  <%= f.text_field :race, placeholder: 'Race' %>
+  <br />
+
+  <%= f.label :hair_color %>
+  <%= f.text_field :hair_color, placeholder: 'Hair Color' %>
+  <br />
+
+  <%= f.label :eye_color %>
+  <%= f.text_field :eye_color, placeholder: 'Eye Color' %>
+  <br />
+
+  <%= f.label :alive %>
+  <%= f.text_field :alive, placeholder: 'Is Alive?' %>
+  <br />
+
+  <%= f.label :married %>
+  <%= f.text_field :married, placeholder: 'Is Married?' %>
+  <br />
+
+  <%= f.label :weight %>
+  <%= f.text_field :weight, placeholder: '185' %>
+  <br />
+
+  <%= f.submit %>
+<% end %>

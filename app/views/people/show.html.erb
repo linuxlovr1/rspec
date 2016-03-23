@@ -1,0 +1,25 @@
+<h1><%= @person.name %></h1>
+<br />
+
+<%= link_to 'Delete', person_path(@person), method: :delete %>
+<br />
+
+<%= link_to 'Edit', edit_person_path(@person) %>
+<br />
+
+<label>Age</label>
+<h4><%= @person.age %></h4>
+<label>Race</label>
+<h4><%= @person.race %></h4>
+<label>Hair Color</label>
+<h4><%= @person.hair_color %></h4>
+<label>Eye Color</label>
+<h4><%= @person.eye_color %></h4>
+<label>Alive</label>
+<h4><%= @person.alive %></h4>
+<label>Married</label>
+<h4><%= @person.married %></h4>
+<label>Weight</label>
+<h4><%= @person.weight %></h4>
+
+<%= link_to 'All People', people_path %>

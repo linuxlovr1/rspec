@@ -1,0 +1,18 @@
+<h1>All People</h1>
+<br />
+<% if @people.any? %>
+  <ul>
+    <% @people.each do |person| %>
+      <li>
+        <%= link_to person.name, person_path(person) %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <h3>No people right now. Please create some.</h3>
+<% end %>
+
+<!-- <a href='/person/new'>New Person</a> -->
+<%= link_to 'New Person', new_person_path %>
+<br />
+<%= link_to 'Delete All', delete_all_users_path, method: :delete, data: {confirm: 'Really delete all?'} %>
